@@ -1,17 +1,20 @@
 /* Write your CSS here */
-.match-card {
+.match-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #0f172a;
   width: 48%;
   border-radius: 16px;
-  padding: 12px 16px 12px 16px;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+  padding-right: 16px;
   margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
-  .match-card {
+  .match-item {
     width: 30%;
     padding: 24px;
     margin-bottom: 32px;

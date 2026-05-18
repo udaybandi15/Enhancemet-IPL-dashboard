@@ -1,8 +1,7 @@
 /* Write your CSS here */
-.team-matches-route-container {
+.team-matches-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
@@ -38,14 +37,14 @@
   background: linear-gradient(to top, #1e293b, #4f5db0);
 }
 
-.team-matches-container {
+.responsive-container {
   width: 90%;
   max-width: 500px;
   margin-top: 48px;
 }
 
 @media screen and (min-width: 768px) {
-  .team-matches-container {
+  .responsive-container {
     margin-top: 96px;
     max-width: 1110px;
   }
@@ -67,4 +66,33 @@
   .recent-matches-list {
     margin-top: 32px;
   }
+}
+
+.back-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Adds space if you include an icon */
+  transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #ffffff;
+  color: #0f172a; /* Changes text to a dark color on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:active {
+  transform: translateY(0); /* Resets lift when clicked */
 }
